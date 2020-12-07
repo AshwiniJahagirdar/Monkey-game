@@ -12,7 +12,7 @@ var sound,collect;
 function preload(){
   
   
-  monkey_running =            loadAnimation("sprite_0.png","sprite_1.png","sprite_2.png","sprite_3.png","sprite_4.png","sprite_5.png","sprite_6.png","sprite_7.png","sprite_8.png")
+  monkey_running = loadAnimation("sprite_0.png","sprite_1.png","sprite_2.png","sprite_3.png","sprite_4.png","sprite_5.png","sprite_6.png","sprite_7.png","sprite_8.png")
   
   bananaimage = loadImage("banana.png");
   obstacleimage = loadImage("obstacle.png");
@@ -188,7 +188,7 @@ function obstacle(){
 function food (){
  if(frameCount % 100 === 0){
   var banana = createSprite (200, 90,20,20);
-  banana.x = Math.round(random(100,300));
+  //banana.x = Math.round(random(100,300));
     banana.addImage( "foodie",bananaimage);
    banana.scale=0.1;
    banana.lifetime = -1;
