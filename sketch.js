@@ -44,7 +44,7 @@ monkey = createSprite( 50,160,20,20);
   
   
   monkey.setCollider("circle",0,0,225);
-  monkey.debug = true
+ // monkey.debug = true
   
   reset = createSprite (300,100);
   reset.addImage("reset",r1);
@@ -120,7 +120,7 @@ function draw() {
       ground.x = ground.width/2;
     }
     
-      if(keyDown("space")&& monkey.y >= 130) {
+      if(keyDown("space")&& monkey.y >= 125) {
         monkey.velocityY = -12;  
     }
     
