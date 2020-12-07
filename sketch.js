@@ -120,7 +120,7 @@ function draw() {
       ground.x = ground.width/2;
     }
     
-      if(keyDown("space")&& monkey.y >= 125) {
+      if(keyDown("space")&& monkey.y >= 126){
         monkey.velocityY = -12;  
     }
     
